@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPAKAY COMPANY LIMITED — Reliable Logistics & Business Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">SC</div>
+    <div class="logo-text">
+      <div class="company-name">SUPAKAY</div>
+      <div class="company-tag">Company Limited</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#testimonials">Clients</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="btn-nav">Request Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════════ MOBILE MENU ═══════════════ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#why" class="mob-link">About</a>
+  <a href="#testimonials" class="mob-link">Clients</a>
+  <a href="#contact" class="mob-link">Contact</a>
+  <a href="#contact" class="mob-link" style="color: var(--orange);">Request Quote →</a>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Sierra Leone's Trusted Logistics Partner</div>
+    <h1 class="hero-headline">
+      Reliable Logistics<br>&amp; Business<br><span>Solutions</span><br>You Can Trust
+    </h1>
+    <p class="hero-sub">
+      Supakay Company Limited delivers end-to-end logistics, clearing, import-export, construction and supply chain services with speed, integrity, and global reach.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Request a Quote
+      </a>
+      <a href="#services" class="btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Our Services
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="document.getElementById('stats').scrollIntoView({behavior:'smooth'})">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ STATS ═══════════════ -->
+<div id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-num" data-target="850">0<span>+</span></span>
+      <span class="stat-label">Projects Completed</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.1s">
+      <span class="stat-num" data-target="320">0<span>+</span></span>
+      <span class="stat-label">Clients Served</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.2s">
+      <span class="stat-num" data-target="12">0<span>+</span></span>
+      <span class="stat-label">Years of Experience</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.3s">
+      <span class="stat-num" data-target="98">0<span>%</span></span>
+      <span class="stat-label">Client Satisfaction</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SERVICES ═══════════════ -->
+<section id="services">
+  <div class="services-header reveal">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-title">Comprehensive Business<br>Solutions</h2>
+    <p class="section-lead">From clearing and forwarding to car sales, we deliver a full spectrum of logistics and business services tailored to your needs.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- Card 1 — Clearing & Forwarding -->
+    <div class="service-card reveal">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=700&q=80"
+          alt="Shipping containers at a port — Clearing & Forwarding">
+      </div>
+      <div class="service-body">
+        <div class="service-title">Clearing &amp; Forwarding</div>
+        <p class="service-desc">Professional customs clearance and freight forwarding services with deep knowledge of import/export regulations to keep your goods moving seamlessly.</p>
+        <a href="#contact" class="service-link">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Card 2 — Import & Export -->
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=700&q=80"
+          alt="Cargo aircraft on a runway — Import & Export">
+      </div>
+      <div class="service-body">
+        <div class="service-title">Import &amp; Export</div>
+        <p class="service-desc">End-to-end import and export management covering documentation, logistics coordination, and compliance to connect you to global markets.</p>
+        <a href="#contact" class="service-link">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Card 3 — Construction -->
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80"
+          alt="Construction site with crane — Construction">
+      </div>
+      <div class="service-body">
+        <div class="service-title">Construction</div>
+        <p class="service-desc">Delivering quality construction projects on time and within budget — from residential builds to large-scale commercial infrastructure development.</p>
+        <a href="#contact" class="service-link">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Card 4 — General Merchandise & Supplies -->
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&q=80"
+          alt="Warehouse shelves stocked with goods — General Merchandise">
+      </div>
+      <div class="service-body">
+        <div class="service-title">General Merchandise &amp; Supplies</div>
+        <p class="service-desc">Reliable sourcing and supply of general goods, equipment, and materials for businesses and institutions at competitive prices.</p>
+        <a href="#contact" class="service-link">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Card 5 — Car Sales -->
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1567818735868-e71b99932e29?w=700&q=80"
+          alt="Row of cars at a dealership — Car Sales">
+      </div>
+      <div class="service-body">
+        <div class="service-title">Car Sales</div>
+        <p class="service-desc">Trusted dealer of used and new vehicles with a wide selection of quality cars to suit every budget — business fleets and personal vehicles.</p>
+        <a href="#contact" class="service-link">View Inventory <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Card 6 — Car Rental -->
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <div class="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=700&q=80"
+          alt="Car being driven on a road — Car Rental">
+      </div>
+      <div class="service-body">
+        <div class="service-title">Car Rental</div>
+        <p class="service-desc">Flexible short and long-term vehicle rental solutions for corporates, NGOs, and individuals — with a maintained modern fleet and professional drivers available.</p>
+        <a href="#contact" class="service-link">Book a Vehicle <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ WHY CHOOSE US ═══════════════ -->
+<section id="why">
+  <div class="why-visual reveal-left">
+    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=900&q=80" alt="Logistics team at work">
+    <div class="why-visual-overlay"></div>
+    <div class="why-badge-float">
+      <div class="badge-icon-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&q=80"
+          alt="Certification badge">
+      </div>
+      <div class="badge-text">
+        <strong>ISO</strong>
+        <span>Certified Operations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal-right">
+    <span class="section-tag">Why Choose Us</span>
+    <h2 class="section-title">Built for Speed.<br>Driven by Trust.</h2>
+    <p class="section-lead" style="color: var(--text-body);">We combine local expertise with global standards to give your business the competitive edge it deserves.</p>
+
+    <div class="why-list">
+
+      <!-- Fast Delivery -->
+      <div class="why-item">
+        <div class="why-item-icon">
+          <img
+            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=120&q=80"
+            alt="Fast delivery truck on a highway">
+        </div>
+        <div class="why-item-text">
+          <strong>Fast, On-Time Delivery</strong>
+          <span>We move your cargo with precision scheduling and real-time coordination to guarantee on-time arrivals every time.</span>
+        </div>
+      </div>
+
+      <!-- Secure Handling -->
+      <div class="why-item">
+        <div class="why-item-icon">
+          <img
+            src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=120&q=80"
+            alt="Padlock representing cargo security">
+        </div>
+        <div class="why-item-text">
+          <strong>Secure Cargo Handling</strong>
+          <span>Your goods are treated with the highest level of care and security protocols throughout the entire supply chain.</span>
+        </div>
+      </div>
+
+      <!-- Pricing -->
+      <div class="why-item">
+        <div class="why-item-icon">
+          <img
+            src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=120&q=80"
+            alt="Calculator and financial documents representing transparent pricing">
+        </div>
+        <div class="why-item-text">
+          <strong>Competitive, Transparent Pricing</strong>
+          <span>No hidden charges. We offer fair, market-competitive rates with full cost transparency from quote to delivery.</span>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="why-item">
+        <div class="why-item-icon">
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=120&q=80"
+            alt="Professional logistics team collaborating">
+        </div>
+        <div class="why-item-text">
+          <strong>Experienced, Dedicated Team</strong>
+          <span>Our seasoned professionals bring decades of combined expertise in logistics, customs, and business operations.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ HIGHLIGHT BAND ═══════════════ -->
+<div id="highlight">
+  <div class="reveal">
+    <span class="section-tag" style="text-align:center;display:block;">Our Promise</span>
+    <h2 class="section-title section-title-white">End-to-End Logistics Solutions</h2>
+    <p class="section-lead" style="margin:16px auto 0;text-align:center;">
+      From port to destination, we manage every stage of your supply chain — so you can focus on growing your business while we handle the movement.
+    </p>
+    <div class="highlight-features">
+      <div class="hl-feat">International Shipping</div>
+      <div class="hl-feat">Customs Compliance</div>
+      <div class="hl-feat">Last-Mile Delivery</div>
+      <div class="hl-feat">Real-Time Tracking</div>
+      <div class="hl-feat">24/7 Support</div>
+      <div class="hl-feat">Insured Cargo</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+<section id="testimonials">
+  <div class="testi-header reveal">
+    <span class="section-tag">Client Stories</span>
+    <h2 class="section-title">Trusted by Businesses<br>Across the Region</h2>
+  </div>
+
+  <div class="testi-track-wrap">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card active">
+        <div class="star-row"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Supakay handled our entire clearing and forwarding operation flawlessly. Our containers arrived on schedule and every document was in perfect order. Exceptional professionalism.</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: var(--orange);">AK</div>
+          <div>
+            <div class="author-name">Alhaji Kamara</div>
+            <div class="author-role">CEO, Kamara Trading Co.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="star-row"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">We've been using Supakay for car rentals for over three years. Their fleet is always well-maintained, drivers are professional, and the service is consistently reliable.</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: var(--navy-light);">FD</div>
+          <div>
+            <div class="author-name">Fatmata Deen</div>
+            <div class="author-role">Operations Manager, NGO Partners SL</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="star-row"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The construction team at Supakay delivered our warehouse complex ahead of schedule and within budget. The build quality exceeded our expectations. Highly recommended.</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: #2A7A4B;">MB</div>
+          <div>
+            <div class="author-name">Mohamed Bangura</div>
+            <div class="author-role">Director, Bangura Industrial Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="star-row"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">From sourcing to delivery, Supakay's merchandise and supply team never missed a beat. They understand the local market and have the connections to get things done fast.</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background: #7A2A6A;">IS</div>
+          <div>
+            <div class="author-name">Ibrahim Sesay</div>
+            <div class="author-role">Procurement Lead, WestAfrica Retail Ltd</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-controls">
+    <button class="testi-btn" id="testiPrev">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#0B1E3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="testi-dots" id="testiDots">
+      <div class="testi-dot active" data-index="0"></div>
+      <div class="testi-dot" data-index="1"></div>
+      <div class="testi-dot" data-index="2"></div>
+    </div>
+    <button class="testi-btn" id="testiNext">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="#0B1E3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA ═══════════════ -->
+<div id="cta">
+  <div class="reveal" style="position:relative;z-index:2">
+    <span class="section-tag" style="display:block;text-align:center">Take the Next Step</span>
+    <h2 class="section-title section-title-white" style="text-align:center">Need Reliable<br>Logistics Support?</h2>
+    <p class="cta-sub">Tell us your requirements and our expert team will prepare a comprehensive, tailored quote within 24 hours.</p>
+    <a href="#contact" class="btn-cta-pulse">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Request a Quote
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════ CONTACT + FOOTER ═══════════════ -->
+<div id="contact">
+  <div class="contact-grid">
+
+    <!-- Form -->
+    <div class="contact-form-wrap reveal">
+      <span class="section-tag">Send a Message</span>
+      <h3 style="font-family:var(--font-head);font-size:36px;font-weight:800;color:white;line-height:1.1;margin-bottom:28px;">Let's Talk<br>Business</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+232 ...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Service Required</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Clearing &amp; Forwarding</option>
+          <option>Import &amp; Export</option>
+          <option>Construction</option>
+          <option>General Merchandise &amp; Supplies</option>
+          <option>Car Sales</option>
+          <option>Car Rental</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your requirements..."></textarea>
+      </div>
+      <button class="form-submit">Send Message →</button>
+    </div>
+
+    <!-- Info -->
+    <div class="contact-info reveal-right">
+      <div class="contact-info-head">We're Ready<br>When You Are</div>
+      <p class="contact-info-lead">Reach out through any of the channels below. Our dedicated team is available to respond to your enquiry promptly.</p>
+
+      <div class="contact-detail">
+        <div class="detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F4640A" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="detail-content">
+          <strong>Address</strong>
+          <span>Freetown, Sierra Leone<br>West Africa</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F4640A" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="detail-content">
+          <strong>Phone / WhatsApp</strong>
+          <span>+232 74 050 509<br>Mon – Sat, 8am – 6pm</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F4640A" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="detail-content">
+          <strong>Email</strong>
+          <span>kargboibrahim879@gmail.com<br>quotes@kargboibrahim879@gmail.com</span>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;padding:28px;background:rgba(244,100,10,0.08);border:1px solid rgba(244,100,10,0.2);border-radius:12px;">
+        <p style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7;font-weight:300;">
+          <span style="color:var(--orange);font-weight:600;">Quick Response Guarantee:</span><br>
+          We respond to all enquiries within 2 business hours during working days. For urgent needs, reach us directly on WhatsApp.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bar">
+    <p>© 2025 <span>SUPAKAY COMPANY LIMITED</span>. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ WHATSAPP FLOAT ═══════════════ -->
+<a href="https://wa.me/23274050509" class="wa-float" target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.562 4.12 1.539 5.845L0 24l6.334-1.517A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.676-.513-5.193-1.406l-.374-.22-3.882.93.975-3.765-.244-.389A9.944 9.944 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>

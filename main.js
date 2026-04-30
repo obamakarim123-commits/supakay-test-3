@@ -87,12 +87,45 @@ setInterval(() => {
 }, 5000);
 
 /* ── FORM SUBMIT ── */
-document.querySelector('.form-submit').addEventListener('click', function () {
-  this.textContent = '✓ Message Sent!';
+document.querySelector('.form-submit').addEventListener('click', function (e) {
+  e.preventDefault();
+  
+  // Collect form data
+  const name = document.getElementById('contactName').value.trim();
+  const phone = document.getElementById('contactPhone').value.trim();
+  const email = document.getElementById('contactEmail').value.trim();
+  const service = document.getElementById('contactService').value.trim();
+  const message = document.getElementById('contactMessage').value.trim();
+  
+  // Validate required fields
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields: Name, Email, and Message');
+    return;
+  }
+  
+  // Create email body with form data
+  const emailBody = `Name: ${name}\nPhone: ${phone}\nService: ${service || 'Not specified'}\n\nMessage:\n${message}`;
+  
+  // Send email via mailto
+  const recipientEmail = 'kargboibrahim879@gmail.com';
+  const subject = `New Inquiry from ${name}`;
+  const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}&cc=${encodeURIComponent(email)}`;
+  
+  // Open email client
+  window.location.href = mailtoLink;
+  
+  // Show success message
+  this.textContent = '✓ Email Opening...';
   this.style.background = '#2A7A4B';
   setTimeout(() => {
     this.textContent = 'Send Message →';
     this.style.background = '';
+    // Clear form
+    document.getElementById('contactName').value = '';
+    document.getElementById('contactPhone').value = '';
+    document.getElementById('contactEmail').value = '';
+    document.getElementById('contactService').value = '';
+    document.getElementById('contactMessage').value = '';
   }, 3000);
 });
 

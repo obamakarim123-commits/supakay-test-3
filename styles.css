@@ -840,6 +840,14 @@ section { padding: 96px 6vw; }
   color: rgba(255,255,255,0.88);
   line-height: 1.5;
 }
+.detail-content a {
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.detail-content a:hover {
+  color: var(--orange);
+}
 
 /* ─── FOOTER BAR ─── */
 .footer-bar {

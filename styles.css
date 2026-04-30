@@ -55,32 +55,16 @@ body {
   display: flex; align-items: center; gap: 12px;
   text-decoration: none;
 }
-.logo-mark {
-  width: 44px; height: 44px;
-  background: var(--orange);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 20px;
-  color: white;
-  letter-spacing: -1px;
+.logo-image {
+  height: 80px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
   flex-shrink: 0;
+  transition: opacity var(--transition);
 }
-.logo-text { line-height: 1.15; }
-.logo-text .company-name {
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 17px;
-  color: white;
-  letter-spacing: 0.5px;
-}
-.logo-text .company-tag {
-  font-size: 10px;
-  color: var(--orange-light);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: var(--font-sub);
+.nav-logo:hover .logo-image {
+  opacity: 0.9;
 }
 
 .nav-links {
@@ -171,7 +155,7 @@ body {
     linear-gradient(to bottom right, rgba(7,21,43,0.88) 0%, rgba(7,21,43,0.72) 60%, rgba(244,100,10,0.25) 100%),
     url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1800&q=80') center/cover no-repeat;
   display: flex; align-items: center;
-  padding: 0 6vw;
+  padding: 100px 6vw 0;
   position: relative;
   overflow: hidden;
 }
